@@ -175,11 +175,23 @@ button:hover{
 	margin: 30px auto;
 	text-align: center;
 }
+/*.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}*/
 .box{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 400px;
+	flex-direction: row;
+}
+@media (max-width: 800px) {
+	.box {
+		flex-direction: column;
+	}
 }
 .card{
 	height: 365px;
